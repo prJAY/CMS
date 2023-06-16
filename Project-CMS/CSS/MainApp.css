@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 8vh 92vh;
+  grid-template-areas: "box1 box1" "box2 box3";
+}
+.header{
+  background-image: url('../Images/HomeBackground.png');
+  background-size: cover;
+  grid-area: box1;
+  
+}
+.SideMenu {
+  background-image: url('../Images/SidebarBackground.png');
+  grid-area: box2;
+}
+.Content{
+    grid-area: box3;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+}
+.logo {
+    letter-spacing: 3px;
+    width: 100px;
+    color:white;
+    margin-left: 30px;
+}
+.nav-links a,.side-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.nav-links a{
+    font-size:18px;
+    text-shadow: 2px 2px rgba(0,0,0,0.3);
+}
+.nav-links li ,.side-links li{
+    list-style: none;
+}
+.nav-links {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+}
+.side-links li {
+  margin:50px;
+  font-size:18px;
+}
+#btAdd{
+    color: #1AC0F2;
+    background-color: white;
+    border-style: none;
+    border-radius: 1em;
+    font-size: 18px;
+    font-weight: 500;
+    width: 135px;
+    height: 38px;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}

@@ -1,0 +1,52 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MainApp.master.vb" Inherits="Project_CMS.MainApp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>H7.CMS</title>
+        <link href="CSS/MainApp.css" rel="stylesheet" />
+        <link href="CSS/ImportFonts.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="CPH_link" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<div class="mainContainer">
+    <div class="header">
+        
+        <nav>
+            <h3 class="logo">
+                H7.CMS
+            </h3>
+            <ul class="nav-links">
+                <li><a href="UserSettings.aspx">Settings</a></li>
+                <li><a href="Login.aspx">Log out</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="SideMenu">
+        
+        <ul class="side-links">
+            <li><a href="ItemCards.aspx">All Items</a></li>
+            <li><a href="ItemCards.aspx?Req=0">Passwords</a></li>
+            <li><a href="ItemCards.aspx?Req=1">Payment Cards</a></li>
+            <li><a href="ItemCards.aspx?Req=2">Documents</a></li>
+            <li><a href="PasswordGenerator.aspx">Password Generator</a></li>
+            <li><asp:Button ID="btAdd" runat="server" Text="+ Add New" /></li>
+        </ul>
+
+    </div>
+    <div class="Content">
+
+        <asp:ContentPlaceHolder ID="CPH_content" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+    </div>
+</div>
+</form>
+</body>
+</html>

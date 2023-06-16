@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+#BtContinue {
+    margin-top: 20px;
+    border: none;
+    border-radius: 1em;
+    height: 35px;
+    width: 120px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #1AC0F2;
+    color: white;
+    cursor: pointer;
+}
+h2{
+    font-weight: 500;
+}

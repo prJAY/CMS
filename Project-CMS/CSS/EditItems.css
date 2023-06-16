@@ -1,0 +1,70 @@
+.MainContainerEdit{
+  background-image: url('../Images/BG5.png');
+  background-size: cover;
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+.headline{
+    color: white;
+    padding-left: 20px;
+}
+#CPH_content_btSave{
+    border: none;
+    margin-left: 225px;
+    border-radius: 1em;
+    height: 35px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #1AC0F2;
+    color:white;
+    cursor:pointer;
+}
+#CPH_content_btVisit{
+    border: 0.1em solid #1AC0F2;
+    margin-left: 10px;
+    border-radius: 2em;
+    height: 30px;
+    width: 80px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1AC0F2;
+    background-color:white;
+    cursor:pointer;
+}
+#CPH_content_btDelete{
+    border: 0.1em solid #1AC0F2;
+    border-radius: 1em;
+    margin-left:20px;
+    height: 35px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: White ;
+    color:#1AC0F2;
+    cursor:pointer;
+}
+table{
+    margin:20px;
+}
+td{
+    padding:10px 0;
+    width: 200px;
+}
+input[type=text],input[type=password],#CPH_content_ddCardType{
+    width: 100%;
+    height: 30px;
+}
+#CPH_content_ddStartDate,#CPH_content_ddEndDate{
+    height: 30px;
+    width:50px;
+}
+#CPH_content_txtStartYear,#CPH_content_txtEndYear{
+    width:80px;
+}
+#CPH_content_txtNotes ,#CPH_content_txtDocNotes{
+    resize: none;
+    height: 100px;
+    width: 265px;
+}

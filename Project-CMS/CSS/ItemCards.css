@@ -1,0 +1,105 @@
+.MainContainerItems{
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  overflow-y: scroll;
+  grid-template-columns: repeat(auto-fit,320px);
+  grid-template-rows: repeat(auto-fit,195px);
+}
+.BodyCard{
+  color:white;
+  margin: 10px;
+  position: relative;
+  height: 175px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "Cardbox1 Cardbox2" 
+    "Cardbox3 Cardbox3";
+  border-radius: 12px;
+  padding: 10px;
+  overflow: hidden;
+}
+.TopLeft{
+  grid-area: Cardbox1;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 700;
+}
+.TopRight{
+  grid-area: Cardbox2;
+  text-align: right;
+  font-family: montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top:3px;
+}
+.CenterPay , .CenterDoc ,.CenterPass{
+  font-family: Ocr-a;
+  letter-spacing: 3px;
+  grid-area: Cardbox3;
+  align-self: center;
+}
+.CenterPass{
+  font-family: Poppins;
+  letter-spacing: 1px;
+}
+.BottomLeft{
+  bottom: 10px;
+  left:10px;
+  position: absolute;
+  font-family: Poppins;
+  font-size: 14px;
+}
+.BottomRight{
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  font-family: montserrat;
+  font-size: 16px;
+  font-weight: 700;
+}
+.ViewLink{
+  border: none;
+  position: absolute;
+  height: 100%;
+  width: 150%;
+  padding:0 0 0 380px;
+  color:white;
+  background: linear-gradient(to right,transparent,transparent,rgba(0,0,0,0.4));
+  transform: translateX(37.7%);
+  transition: transform ease .5s;
+  font-size: 17px;
+  cursor: pointer;
+}
+.ViewLink:hover {
+  transform: translateX(-33.3%);
+}
+#CPH_content_Button1{
+    color: #1AC0F2;
+    background-color: white;
+    border:0.1em solid #1AC0F2;
+    border-radius: 1em;
+    font-size: 18px;
+    font-weight: 500;
+    width: 135px;
+    height: 38px;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+#CPH_content_Panel1{
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  opacity:0.7;
+  pointer-events: none;
+}
+#CPH_content_Label3{
+  display: block;
+  margin: 10px 0 0 40px;
+}
